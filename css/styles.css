@@ -1,0 +1,135 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+header {
+  background-color: #336699; /* Dark blue color for the header */
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* White color for the navigation links */
+}
+
+section {
+  padding: 40px;
+}
+
+#banner {
+  background-color: #F0F4F8; /* Light blue color for the banner section */
+  text-align: center;
+  color: #333;
+}
+
+#banner h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #336699; /* Dark blue color for buttons */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+#about h2,
+#products h2,
+#services h2,
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+footer {
+  background-color: #336699; /* Dark blue color for the footer */
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Additional customizations */
+
+body {
+  background-color: #F8F8F8; /* Light gray color for the background */
+}
+
+#about {
+  background-color: #E0E6ED; /* Light gray color for the about section */
+  color: #333;
+}
+
+#products {
+  background-color: #FFFFFF; /* White color for the products section */
+  color: #333;
+}
+
+#services {
+  background-color: #F0F4F8; /* Light blue color for the services section */
+  color: #333;
+}
+
+#contact {
+  background-color: #E0E6ED; /* Light gray color for the contact section */
+  color: #333;
+}
+
+/* Additional customizations */
+
+#banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+footer p {
+  color: #fff;
+}
+
+.slider {
+  position: relative;
+  height: 350px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+h1, p, .btn {
+  position: relative;
+  z-index: 1;
+}

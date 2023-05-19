@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharda Packaging - Corrugated Manufacturing Factory</title>
+  <link rel="stylesheet" href="css/styles.css"> <!-- Add your custom CSS file here -->
+  <script src="slider.js"></script>
+  <style>
+    /* Styling for the pop-up modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 500px;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .whatsapp-logo {
+      max-width: 100px;
+      margin: 20px auto;
+    }
+    ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .hand-bullet li {
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .hand-bullet li::before {
+    content: "\261B";
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="banner">
+    <div class="slider">
+      <div class="slide" style="background-image: url('/assets/1.jpg');"></div>
+      <div class="slide" style="background-image: url('assets/2.jpg');"></div>
+      <div class="slide" style="background-image: url('assets/3.jpg');"></div>
+    </div><br/>
+    <h1>Welcome to Sharda Packaging</h1>
+    <p>Your trusted partner for high-quality corrugated packaging solutions.</p>
+    <span onclick="openModal()"><a href="#contact" class="btn">Contact Us</a></span>
+  </section>
+  <script>
+    var slides = document.querySelectorAll('.slide');
+var currentSlide = 0;
+
+function showSlide(slideIndex) {
+  // Hide all slides
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove('active');
+  }
+  
+  // Show the specified slide
+  slides[slideIndex].classList.add('active');
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Change slide every 3 seconds
+setInterval(nextSlide, 3000);
+  </script>
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Contact Sharda Packaging</h2>
+      <p>Sec-2, Plot No.-B-50, Shatabdi Nagar Rijhani, Near Water Tank, Partapur, Meerut</p><br/>
+      <ul class="hand-bullet">
+        <li>Phone 1: +91-7417781943</li>
+        <li>Phone 2: +91-7906066538</li>
+        <li>WhatsApp: <a href="https://wa.me/7417781943?text=Hello%20there!%20I%20found%20your%20website%20and%20would%20like%20to%20get%20in%20touch.%20">Send message</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript functions to open and close the modal
+    function openModal() {
+      document.getElementById("contactModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("contactModal").style.display = "none";
+    }
+  </script>
+
+  <section id="about">
+    <h2>About Sharda Packaging</h2>
+    <p>Your trusted partner for high-quality corrugated packaging solutions. We specialize in customized products, sustainable practices, and exceptional customer service. Contact us for innovative and reliable packaging solutions tailored to your specific needs.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <p>
+      <div style="display: flex;">
+        <ul class="hand-bullet" style="flex: 1;">
+          <li>shipping boxes</li>
+          <li>retail packaging</li>
+          <li>storage boxes</li>
+        </ul>
+        <ul class="hand-bullet" style="flex: 1;">
+          <li>food packaging</li>
+          <li>electronics packaging</li>
+          <li>pharmaceutical packaging</li>
+        </ul>
+      </div>      
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>Superior quality and customization. Expert support and sustainable practices. Exceptional customer service and competitive pricing. Choose Sharda Packaging for your corrugated needs.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Sharda Packaging</h2>
+    <ul>
+      <li>Phone 1: +91-7417781943</li>
+      <li>Phone 2: +91-7906066538</li>
+      <li>WhatsApp: <a href="https://wa.me/7417781943?text=Hello%20there!%20I%20found%20your%20website%20and%20would%20like%20to%20get%20in%20touch.%20">Send message</a></li>
+    </ul>
+    <p>Sec-2, Plot No.-B-50, Shatabdi Nagar Rijhani, Near Water Tank, Partapur, Meerut</p><br/>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.183596996279!2d77.65886861042895!3d28.922599070748316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c63b6a512068b%3A0xc2172a5a3d0da7fb!2sSharda%20packaging!5e0!3m2!1sen!2sjp!4v1684514881866!5m2!1sen!2sjp" width="310" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Sharda Packaging. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
